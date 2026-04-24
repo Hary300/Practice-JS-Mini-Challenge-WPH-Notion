@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding-left: 20px;
+}
+
+body {
+  font-family: cursive;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+
+  border-radius: 10px;
+  box-shadow: 0 0 5px gray;
+}
+
+#btn {
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.requirement {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content pre {
+  border-radius: 5px;
+  padding: 0 20px;
+}

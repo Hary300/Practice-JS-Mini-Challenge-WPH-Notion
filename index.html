@@ -4,6 +4,618 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini Challenge</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
   </head>
-  <body></body>
+  <body>
+    <h1>Mini Challenges - WPH JS Notion</h1>
+    <h2>Notion - Class 7</h2>
+    <!-- 1. Membuat button memunculkan allert -->
+    <div class="container">
+      <h2>1. Membuat button memunculkan allert</h2>
+      <div class="requirement">
+        <h3>Requirement:</h3>
+        <ol>
+          <li>Pakai external JS</li>
+          <li>Gunakan defer</li>
+          <li>Tampilkan alert saat klik</li>
+        </ol>
+      </div>
+      <button id="btn">Click me</button>
+    </div>
+
+    <!-- 2. Test JS code -->
+    <div class="container">
+      <h2>2. Test JS code</h2>
+      <div class="requirement">
+        <div class="content code1"></div>
+
+        <h3>Pertanyaan:</h3>
+        <ol>
+          <li>Apakah error?</li>
+          <li>Jenis error apa?</li>
+        </ol>
+
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>Iya, muncul error</li>
+          <li>
+            x is not defined. Karena menggunakan use strict variable harus
+            dideklarasi menggunakan var, let atau const
+          </li>
+        </ol>
+        <div class="content code2"></div>
+      </div>
+    </div>
+
+    <!-- 3. Apa output dari kode ini? -->
+    <div class="container">
+      <h2>3. Apa output dari kode ini?</h2>
+      <div class="requirement">
+        <div class="content code3"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>Cannot access 'a' before initialization</li>
+          <li>
+            Karena let dan const tidak bisa dipakai sebelum dideklarasikan
+          </li>
+          <li>
+            Jadi sebelum baris let a = 5, variabel a sudah ada tapi belum boleh
+            diakses
+          </li>
+        </ol>
+
+        <div class="content code4"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>Output: B</li>
+          <li>
+            Keyword const memang tidak bisa direassign (tidak bisa diganti
+            object baru)
+          </li>
+          <li>Tapi isi di dalam object masih bisa diubah</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 4. Apa output dari kode ini? -->
+    <div class="container">
+      <h2>4. Apa output dari kode ini?</h2>
+      <div class="requirement">
+        <div class="content code5"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>object, karena array adalah type reference</li>
+          <li>true, cara untuk mengecek apakah sebuah array</li>
+          <li>object, null bertipe object</li>
+          <li>bigint, bertipe big integer. Angka yang sangat besar</li>
+        </ol>
+
+        <div class="content code6"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>Output: B</li>
+          <li>
+            Keyword const memang tidak bisa direassign (tidak bisa diganti
+            object baru)
+          </li>
+          <li>Tapi isi di dalam object masih bisa diubah</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 5. Apa output dari kode ini? -->
+    <div class="container">
+      <h2>5. Apa output dari kode ini?</h2>
+      <div class="requirement">
+        <div class="content code7"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>true, karena 'false' adalah string yang tidak kosong</li>
+          <li>0, string kosong jadi 0</li>
+          <li>"52", string + number = gabung</li>
+          <li>10, perkalian = jadi angka</li>
+          <li>2, true = 1</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 6. Apa output dari kode ini? -->
+    <div class="container">
+      <h2>6. Apa output dari kode ini?</h2>
+      <div class="requirement">
+        <div class="content code8"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>1, sisa bagi</li>
+          <li>8, pangkat</li>
+          <li>55, gabung string</li>
+          <li>25, jadi angka lalu dikali</li>
+        </ol>
+
+        <div class="content code9"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>6, naik dulu lalu ditampilkan</li>
+          <li>6, ditampilkan dulu lalu naik</li>
+          <li>7, nilai akhir x</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 7. Apa output dari kode ini? -->
+    <div class="container">
+      <h2>7. Apa output dari kode ini?</h2>
+      <div class="requirement">
+        <div class="content code10"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>true, karena == hanya cek nilai (string diubah ke number)</li>
+          <li>false, karena === cek nilai dan tipe</li>
+          <li>true, karena false dianggap 0</li>
+          <li>false, karena tipe berbeda (boolean vs number)</li>
+        </ol>
+
+        <div class="content code11"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>true, karena null dan undefined dianggap sama</li>
+          <li>false, karena === cek tipe dan nilainya berbeda</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 8. Apa output dari kode ini? -->
+    <div class="container">
+      <h2>8. Apa output dari kode ini?</h2>
+      <div class="requirement">
+        <div class="content code12"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>B, karena 85 >= 80 tapi kurang dari 90</li>
+        </ol>
+
+        <div class="content code13"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>
+            Guest, karena user string kosong (false) maka ambil nilai kanan (OR)
+          </li>
+          <li>
+            (kosong), karena user string kosong (false) maka ambil nilai kiri
+            (AND)
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 9. Apa output dari kode ini? -->
+    <div class="container">
+      <h2>9. Apa output dari kode ini?</h2>
+      <div class="requirement">
+        <div class="content code14"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>B, karena jika AND dan semua truthy, ambil nilai terakhir</li>
+          <li>0, karena jika AND, ambil nilai falsy pertama</li>
+          <li>A, karena jika OR ambil nilai truthy pertama</li>
+          <li>Fallback, karena jika OR, ambil nilai truthy pertama</li>
+          <li>1, karena jika OR ambil nilai truthy pertama</li>
+        </ol>
+
+        <div class="content code15"></div>
+        <h3>Jawaban:</h3>
+        <p>!! = konversi ke boolean</p>
+        <ol>
+          <li>true, karena string tidak kosong adalah truthy</li>
+          <li>false, karena 0 adalah falsy</li>
+          <li>true, karena array (meskipun kosong) adalah truthy</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 10. Apa output dari kode ini? -->
+    <div class="container">
+      <h2>10. Apa output dari kode ini?</h2>
+      <div class="requirement">
+        <div class="content code16"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>
+            0, karena jika ?? ambil nilai pertama yang bukan null atau undefined
+          </li>
+          <li>5, karena jika OR ambil nilai truty pertama</li>
+          <li>
+            (kosong), karena jika ?? ambil nilai pertama yang bukan null atau
+            undefined
+          </li>
+          <li>default, karena jika OR ambil nilai truty pertama</li>
+        </ol>
+
+        <div class="content code17"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>
+            undefined, karena optional chaining tidak error saat nilai user
+            null. Error jika tanpa optional chaining
+          </li>
+          <li>
+            Guest, karena jika ?? ambil nilai pertama yang bukan null atau
+            undefined
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 11. Apa output dari kode ini? -->
+    <div class="container">
+      <h2>11. Apa output dari kode ini?</h2>
+      <div class="requirement">
+        <div class="content code18"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>1, karena i = 1 langsung dicetak</li>
+          <li>
+            3, karena i = 2 di-skip (continue), i = 3 dicetak, lalu i = 4
+            berhenti (break)
+          </li>
+        </ol>
+
+        <div class="content code19"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>0</li>
+          <li>0</li>
+          <li>0</li>
+          <li>... terus tidak berhenti</li>
+          <li>infinite loop, karena kondisi berhenti tidak pernah terpenuhi</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 12. Apa output dari kode ini? -->
+    <div class="container">
+      <h2>12. Apa output dari kode ini?</h2>
+      <div class="requirement">
+        <div class="content code20"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>A, karena case "Jumat" cocok dan langsung dieksekusi</li>
+          <li>
+            B, karena tidak ada break setelah "Jumat" jadi lanjut ke case
+            "Sabtu" (fall-through)
+          </li>
+        </ol>
+
+        <div class="content code21"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>
+            Full access, karena role "admin" cocok di case admin dan jatuh ke
+            case owner (fall-through) lalu dicetak di console
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 13. Apa output dari kode ini? -->
+    <div class="container">
+      <h2>13. Apa output dari kode ini?</h2>
+      <div class="requirement">
+        <div class="content code22"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>10, karena b punya default value 2 sehingga 5 * 2 = 10</li>
+        </ol>
+
+        <div class="content code23"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>
+            undefined, karena function tidak mengembalikan nilai (tidak ada
+            return)
+          </li>
+        </ol>
+
+        <h3>Intruksi:</h3>
+        <ol>
+          <li>Buat function mengubah meter ke centimeter</li>
+        </ol>
+        <div class="content code24"></div>
+
+        <ol>
+          <li>Karena 1 cm = 1/100 m</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 14. Apa output dari kode ini? -->
+    <div class="container">
+      <h2>14. Apa output dari kode ini?</h2>
+      <div class="requirement">
+        <div class="content code25"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>12, karena fn(4) = 4 * 3 = 12</li>
+          <li>
+            Fungsi fn dikirim sebagai argument ke fungsi jalankan (higher-order
+            function)
+          </li>
+        </ol>
+
+        <div class="content code26"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>Hello, karena function langsung dijalankan saat dibuat (IIFE)</li>
+          <li>Ini disebut Immediately Invoked Function Expression (IIFE)</li>
+        </ol>
+
+        <h3>Intruksi:</h3>
+        <ol>
+          <li>Buat function mengubah applyDiskon(harga, callback)</li>
+          <li>callback = menentukan diskon</li>
+        </ol>
+        <div class="content code27"></div>
+
+        <ol>
+          <li>90, karena diskon = 10% dari 100 yaitu 10, lalu 100 - 10 = 90</li>
+          <li>
+            fn(harga) dipanggil sebagai callback function untuk menghitung
+            diskon
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 15. Apa output dari kode ini? -->
+    <div class="container">
+      <h2>15. Apa output dari kode ini?</h2>
+      <div class="requirement">
+        <div class="content code28"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>10, karena 2 dikali 5 hasilnya 10</li>
+          <li>fn adalah arrow function yang mengalikan input dengan 5</li>
+        </ol>
+
+        <div class="content code29"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>
+            [undefined, undefined, undefined], hasilnya aneh karena callback map
+            tidak me-return nilai
+          </li>
+          <li>
+            Harus pakai return (return n * 2) agar hasil map menjadi [2, 4, 6]
+          </li>
+        </ol>
+
+        <h3>Intruksi:</h3>
+        <ol>
+          <li>filter produk dengan harga &lt; 1 juta pakai arrow function</li>
+        </ol>
+        <div class="content code30"></div>
+
+        <ol>
+          <li>
+            [80000, 150000, 200000], karena filter hanya mengambil harga yang
+            kurang dari 1000000
+          </li>
+          <li>
+            Nilai 1000000 tidak ikut karena syaratnya harus lebih kecil (h &lt;
+            1000000)
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 16. Apa output dari kode ini? -->
+    <div class="container">
+      <h2>16. Apa output dari kode ini?</h2>
+      <div class="requirement">
+        <div class="content code31"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>
+            ["a", "b"], karena Object.keys mengambil semua key dari object
+          </li>
+          <li>Hasilnya berupa array berisi nama property (bukan nilai)</li>
+        </ol>
+
+        <div class="content code32"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>
+            25, karena key 'umur' digunakan sebagai nama property di object
+          </li>
+          <li>
+            [key] artinya computed property name, jadi 'umur' menjadi key object
+          </li>
+        </ol>
+
+        <h3>Intruksi:</h3>
+        <ol>
+          <li>filter produk dengan harga &lt; 1 juta pakai arrow function</li>
+        </ol>
+        <div class="content code33"></div>
+
+        <ol>
+          <li>Umur angkatan: 3, karena 2026 - 2023 = 3 (mahasiswa1)</li>
+          <li>Umur angkatan: 26, karena 2026 - 2000 = 26 (mahasiswa2)</li>
+        </ol>
+      </div>
+    </div>
+
+    <h2>Notion - Class 8</h2>
+    <!-- 1. Apa output dari kode ini? -->
+    <div class="container">
+      <h2>1. Apa output dari kode ini?</h2>
+      <div class="requirement">
+        <div class="content code34"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>
+            5, karena a dan b menunjuk ke object yang sama (reference), jadi
+            perubahan di b juga mengubah a
+          </li>
+        </ol>
+
+        <div class="content code35"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>
+            Jakarta, karena spread operator hanya membuat shallow copy, sehingga
+            object di dalam (address) tetap referensi yang sama
+          </li>
+        </ol>
+
+        <h3>Intruksi:</h3>
+        <ol>
+          <li>Perbaiki agar tidak mengubah state lama</li>
+        </ol>
+        <div class="content code36"></div>
+        <h3>Jawaban:</h3>
+        <div class="content code37"></div>
+
+        <ol>
+          <li>
+            Bandung, state asli tidak berubah karena structuredClone membuat
+            deep copy
+          </li>
+          <li>
+            Jakarta, karena newState adalah hasil salinan penuh lalu city diubah
+            di dalamnya
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- 2. Apa output dari kode ini? -->
+    <div class="container">
+      <h2>2. Apa output dari kode ini?</h2>
+      <div class="requirement">
+        <div class="content code38"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>
+            undefined, karena fungsi dipanggil tanpa context object sehingga
+            this tidak mengarah ke user
+          </li>
+          <li>
+            this menjadi undefined (atau global di non-strict mode), jadi
+            this.nama tidak ditemukan
+          </li>
+          <li>Error di strict mode</li>
+        </ol>
+
+        <div class="content code39"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>undefined, karena arrow function tidak punya this sendiri</li>
+          <li>
+            this di arrow function mengambil dari scope luar (bukan dari obj),
+            jadi this.nama tidak ada
+          </li>
+        </ol>
+
+        <h3>Intruksi:</h3>
+        <ol>
+          <li>Perbaiki agar output 'Dewi'</li>
+        </ol>
+        <div class="content code40"></div>
+        <ol>
+          <li>
+            undefined, karena function di dalam setTimeout dipanggil sebagai
+            callback biasa sehingga this tidak mengarah ke object user
+          </li>
+          <li>
+            this di dalam callback jadi undefined (atau global object), jadi
+            this.nama tidak ditemukan
+          </li>
+        </ol>
+        <h3>Jawaban:</h3>
+        <div class="content code41"></div>
+
+        <ol>
+          <li>
+            Dewi, karena arrow function tidak punya this sendiri sehingga
+            mengambil this dari scope luar (lexical scope) yaitu function sapa
+            yang berada di object user
+          </li>
+          <li>
+            this di sini berasal dari context tempat arrow function dibuat,
+            bukan dari cara pemanggilannya
+          </li>
+        </ol>
+
+        <div class="content code42"></div>
+      </div>
+    </div>
+
+    <!-- 3. Apa output dari kode ini? -->
+    <div class="container">
+      <h2>3. Apa output dari kode ini?</h2>
+      <div class="requirement">
+        <div class="content code43"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>
+            Dicky, karena function A dipanggil dengan new sehingga this mengarah
+            ke object baru yang dibuat
+          </li>
+          <li>constructor function mengisi property nama ke instance a</li>
+        </ol>
+
+        <div class="content code44"></div>
+        <h3>Jawaban:</h3>
+        <ol>
+          <li>
+            true, karena method say disimpan di prototype sehingga a1 dan a2
+            menggunakan function yang sama
+          </li>
+          <li>
+            keduanya tidak membuat copy method sendiri, tapi berbagi satu
+            referensi di A.prototype
+          </li>
+        </ol>
+
+        <h3>Intruksi:</h3>
+        <ol>
+          <li>Perbaiki agar output 'Dewi'</li>
+        </ol>
+        <div class="content code45"></div>
+        <ol>
+          <li>
+            undefined, karena function di dalam setTimeout dipanggil sebagai
+            callback biasa sehingga this tidak mengarah ke object user
+          </li>
+          <li>
+            this di dalam callback jadi undefined (atau global object), jadi
+            this.nama tidak ditemukan
+          </li>
+        </ol>
+        <h3>Jawaban:</h3>
+        <div class="content code46"></div>
+
+        <ol>
+          <li>
+            Dewi, karena arrow function tidak punya this sendiri sehingga
+            mengambil this dari scope luar (lexical scope) yaitu function sapa
+            yang berada di object user
+          </li>
+          <li>
+            this di sini berasal dari context tempat arrow function dibuat,
+            bukan dari cara pemanggilannya
+          </li>
+        </ol>
+      </div>
+    </div>
+    <!-- a -->
+  </body>
 </html>
