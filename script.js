@@ -686,29 +686,15 @@ Prism.highlightAll();
 const code46 = document.querySelector('.code46');
 const c46 = `
 \`\`\`js
-const user = {
-  nama: 'Dewi',
-  sapa() {
-    setTimeout(() => {
-      console.log(this.nama);
-    }, 1000);
-  },
+function User(name) {
+  this.name = name;
+}
+User.prototype.say = function () {
+  return 'Hi' + ' ' + this.name;
 };
-
-user.sapa(); // Dewi
+const u = new User('Dewi');
+console.log(u.say());
 \`\`\`
 `;
 code46.innerHTML = marked.parse(c46);
 Prism.highlightAll();
-
-function User(name) {
-  this.name = name;
-}
-
-User.prototype.say = () => {
-  console.log(typeof this.name);
-  return 'Hi ' + this.name;
-};
-
-const u = new User('Dewi');
-console.log(u.say());

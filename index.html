@@ -605,13 +605,12 @@
 
         <ol>
           <li>
-            Dewi, karena arrow function tidak punya this sendiri sehingga
-            mengambil this dari scope luar (lexical scope) yaitu function sapa
-            yang berada di object user
+            Hi Dewi, karena this di dalam method say() mengacu pada object u
+            yang memanggilnya
           </li>
           <li>
-            this di sini berasal dari context tempat arrow function dibuat,
-            bukan dari cara pemanggilannya
+            this.name mengambil nilai "Dewi" dari object tersebut, lalu digabung
+            dengan teks "Hi"
           </li>
         </ol>
       </div>
