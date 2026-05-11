@@ -100,12 +100,21 @@
         <div class="content code6"></div>
         <h3>Jawaban:</h3>
         <ol>
-          <li>Output: B</li>
+          <li>Output: 99</li>
+
+          <li>Karena variable <code>b</code> tidak membuat object baru.</li>
+
           <li>
-            Keyword const memang tidak bisa direassign (tidak bisa diganti
-            object baru)
+            <code>b = a</code> berarti <code>b</code> menunjuk object yang sama
+            dengan <code>a</code>.
           </li>
-          <li>Tapi isi di dalam object masih bisa diubah</li>
+
+          <li>Saat <code>b.x = 99</code>, object aslinya ikut berubah.</li>
+
+          <li>
+            Maka:
+            <code>a.x</code> juga menjadi <code>99</code>.
+          </li>
         </ol>
       </div>
     </div>
@@ -591,13 +600,25 @@
         </ol>
         <div class="content code45"></div>
         <ol>
+          <li>Output: <code>Hi undefined</code></li>
+
           <li>
-            undefined, karena function di dalam setTimeout dipanggil sebagai
-            callback biasa sehingga this tidak mengarah ke object user
+            Karena method <code>say</code> memakai <code>arrow function</code>.
           </li>
+
+          <li>Arrow function tidak memiliki <code>this</code> sendiri.</li>
+
           <li>
-            this di dalam callback jadi undefined (atau global object), jadi
-            this.nama tidak ditemukan
+            <code>this</code> pada arrow function mengambil dari scope luar.
+          </li>
+
+          <li>
+            Jadi <code>this.name</code> bukan milik object <code>u</code>.
+          </li>
+
+          <li>
+            Akibatnya:
+            <code>this.name</code> menjadi <code>undefined</code>.
           </li>
         </ol>
         <h3>Jawaban:</h3>

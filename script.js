@@ -10,6 +10,7 @@ btn.addEventListener('click', function () {
 const code1 = document.querySelector('.code1');
 const c1 = `
 \`\`\`js
+'use strict'
 function test() {
 x = 5;
 console.log(x);
@@ -25,6 +26,7 @@ Prism.highlightAll();
 const code2 = document.querySelector('.code2');
 const c2 = `
 \`\`\`js
+'use strict'
 function test() {
   let x = 5;
   console.log(x);
